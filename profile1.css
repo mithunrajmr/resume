@@ -4,7 +4,7 @@
     font-family: cursive;
 }
 .background{
-   background-image:url('./images/mithunbackgroundenhanced.jpg');
+   background-image:url('mithunbackgroundenhanced.jpg');
    background-size: cover;
    background-position: center;
    height: 100vh;
