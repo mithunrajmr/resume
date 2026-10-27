@@ -1,1 +1,904 @@
+Wipro Project Experience and Technical Work Dossier
 
+Purpose: This is an evidence-based working dossier, not a resume. It separates confirmed work from inference, avoids confidential implementation details, and does not assume that every explored solution was implemented or delivered.
+
+A. Executive summary of your actual role and project context
+
+You are working as a Project Engineer at Wipro on the modernization, stabilization, and SIT defect-resolution phase of a large enterprise cargo and logistics application. The application appears to support airline cargo operations across areas such as shipment processing, schedules, capacity, stock, pricing, proration, rate distribution, ULD operations, administration, and master-data maintenance.
+
+Your strongest demonstrated engineering work is not greenfield feature development. It is application modernization and complex defect resolution within a large existing codebase, particularly:
+
+Migrating and stabilizing an enterprise Java application on JDK 21.
+Resolving compatibility issues introduced by upgrades to Spring 6, Hibernate 6, Jakarta APIs, QueryDSL 5, Infinispan, Apache CXF, and frontend libraries.
+Diagnosing defects across Java, JavaScript, SQL, Gradle, Spring configuration, application servers, reverse proxies, caches, and deployment environments.
+Comparing legacy/release implementations against migrated code and adapting selected behavior rather than copying it blindly.
+Building and deploying multi-module WAR packages and validating business workflows locally and in SIT-like environments.
+Working through defect branches, pull requests, code review, SIT verification, environment coordination, and release-branch synchronization.
+Using AI-assisted engineering to analyze source code, logs, branches, dependencies, configurations, and migration alternatives, while personally reviewing commands, diffs, runtime behavior, and test outcomes.
+
+There is evidence that you handled multiple defects across Masters, Shipment, Schedules, ULD, and shared platform components. One status report listed 11 work items assigned to you, with ten open and one resolved at that time. Another earlier report listed seven critical/high-priority Masters defects assigned to you. These are workload indicators, not proof that every item was independently completed by you.
+
+B. Project and application overview
+Confirmed information
+Business domain
+
+The application is an enterprise airline cargo and logistics platform. Work-related screens and modules referenced in the accessible history include:
+
+Shipment and airway-bill processing
+Cargo booking and routing
+Flight schedules and availability
+Capacity
+ULD management
+Stock and document inventory
+Pricing, TACT, proration, and rate distribution
+Truck handling
+Administration and master data
+Messaging and integration components
+
+The Shipment application includes flows such as Master AWB capture, shipment routing, pharma requests, document upload, booking-window validation, and availability lookup.
+
+Application shape
+
+The available evidence indicates a large modular Java enterprise application, packaged into combined or module-specific WAR files. It uses:
+
+Layered domain, repository, service, utility, configuration, and UI modules.
+Spring-managed services and XML-based application context configuration.
+JPA/Hibernate persistence and Oracle-style SQL.
+Web service or schema-object generation through custom Gradle plugins and Apache CXF.
+Browser interfaces built with JavaScript, jQuery/jqGrid or free-jqGrid, and custom shared UI libraries.
+Multiple application contexts or WARs that must interoperate.
+Tomcat application servers behind Apache HTTP Server reverse-proxy and rewrite rules.
+Remote cache integration through Infinispan/Hot Rod.
+Queue or messaging functionality with service and schema-object dependencies.
+
+This architecture is supported by combined WAR builds, module inclusion lists, Spring bean-loading failures, service generation, cache handling, proxy routing, and cross-WAR debugging discussions.
+
+Modernization context
+
+The existing application is being upgraded from a legacy Java stack to a JDK 21-compatible stack. The accessible history directly references:
+
+JDK 21 branches and builds
+Comparison against a legacy JDK 8/release implementation
+Spring 6.2 behavior
+Hibernate 6.5.x
+Jakarta APIs
+QueryDSL 5.1
+Tomcat 10.1
+Apache CXF 4
+Infinispan 16-related cache behavior
+Frontend behavior changes after moving from older jqGrid behavior to free-jqGrid
+BeanUtils behavior changes between older and newer versions
+Reasonable inferences
+The product is a long-lived business-critical platform with substantial legacy behavior that must be preserved during modernization.
+The combined WAR configuration suggests boundaries between business modules are partly modular but operationally interconnected.
+Much of the SIT work involves distinguishing actual migration regressions from missing data, incorrect environment configuration, unavailable artifacts, or deployment issues.
+
+These inferences are strongly supported by repeated cross-module build, runtime, data, and compatibility investigations, but the full official architecture was not available.
+
+Unknown or not safe to state externally
+Official customer-facing product name.
+Exact client identity.
+Number of production users, transactions, cargo volumes, or countries served.
+Complete production topology.
+Commercial value, contract size, SLA, or regulatory obligations.
+Whether you formally own any module as its designated developer.
+
+For an external resume, the project can safely be described as:
+
+Modernized and stabilized a large airline cargo and logistics platform covering shipment, schedules, capacity, master data, and supporting operational modules.
+
+C. Your responsibilities and recurring workstreams
+1. SIT defect investigation and resolution
+
+You analyzed defects reported during SIT, reproduced them locally or in accessible environments, traced browser and server behavior, inspected branch changes, and separated code defects from data or environment issues.
+
+Examples include:
+
+Master-data screen failures.
+Queue refresh and selection behavior.
+Schedule screen issues.
+Shipment and pharma-request flows.
+UI layout and navigation regressions.
+Unexpected error popups caused by upgraded library behavior.
+2. JDK 21 and framework migration stabilization
+
+You worked on defects introduced or exposed by the modernization stack, including:
+
+BeanUtils conversion behavior changes.
+Spring cache-key expression compatibility.
+Hibernate identifier generation.
+QueryDSL dependency migration.
+Infinispan cache availability behavior.
+Jakarta/CXF-generated code and service dependencies.
+Differences between legacy and migrated queue classes.
+3. Backend debugging and business-logic analysis
+
+You inspected Java repository, service, validation, utility, and entity-copy logic. Your discussions show work involving:
+
+Numeric type conversion and BigDecimal/Number compatibility.
+Field mapping and primitive conversion.
+Database identifier generation.
+Queue transaction schema compatibility.
+Spring dependency injection.
+Validation errors and application workflow prerequisites.
+4. Frontend and shared UI troubleshooting
+
+You analyzed JavaScript behavior, jqGrid selection, pagination, UI styling, module loading, and request payloads. The strongest documented frontend work includes adapting pagination behavior after the grid-library migration and investigating UI visual differences and popup behavior.
+
+5. Build, dependency, and packaging engineering
+
+You built module-specific and combined WARs, analyzed Gradle failures, traced transitive dependencies, distinguished invalid coordinates from repository failures, and inspected packaged JAR behavior.
+
+Examples include:
+
+Successful rate-distribution WAR generation.
+TACT dependency-chain isolation.
+Missing UI artifacts.
+Mockito artifact mismatch.
+Custom Gradle plugin version mismatch.
+Queue transaction JAR packaging decisions.
+6. Local deployment and environment integration
+
+You configured and diagnosed:
+
+Tomcat 10.1 startup and deployment.
+Java/JDWP port conflicts.
+JNDI resources.
+Multiple local application-server instances.
+Apache HTTP Server reverse-proxy routing.
+AJP and HTTP backend routing.
+Session cookies, redirects, and cross-WAR navigation.
+7. Database validation and test-data analysis
+
+You used SQL to:
+
+Verify missing test data between environments.
+Compare master and detail records.
+inspect system parameters.
+Validate shipment or document records.
+Trace identifier counter collisions.
+8. Source-control and delivery workflow
+
+You worked in a branch-heavy Git process, including:
+
+Updating from the JDK 21 release branch.
+Comparing migrated and legacy release branches.
+Creating issue-specific branches.
+Managing stashes and generated changes.
+Keeping deployment-generated files out of pull requests.
+Preparing PR-ready updates and communicating results to leads.
+D. Detailed technical work inventory
+Workstream 1: Shared compatibility fixes across Masters screens
+Task or problem
+
+Several migrated Masters screens produced unexpected errors after library and framework upgrades. Documented cases included:
+
+Failure when empty values were copied into primitive numeric fields.
+Airport-related lookups failing because Spring could not resolve a cache-key argument by name.
+Previous/next pagination malfunctioning after a jqGrid implementation change.
+Your contribution
+
+You worked on or communicated fixes across three shared areas:
+
+A shared property-copy utility.
+A city/airport service cache annotation.
+A common grid JavaScript component.
+
+The history states that four SIT defects across multiple Masters screens were fixed in two branches and locally verified after rebuild and deployment. It records specific test behavior, including record creation, editing, lookup population, and page navigation.
+
+Technical approach
+Compared BeanUtils behavior between the legacy and upgraded versions.
+Restored legacy-compatible behavior only for empty values copied into primitive fields.
+Replaced a named Spring cache-key parameter with positional parameter notation.
+Adjusted grid pagination so a server response with page zero retained the requested page, matching legacy behavior.
+Performed cross-screen regression checks instead of validating only the originally failing screen.
+Outcome
+
+Supported as completed and locally verified:
+
+New and existing master records could be created or edited without the conversion error.
+Airport lookup populated dependent fields without the error popup.
+Previous/next pagination worked across the tested screens.
+Shared-component regression checks were performed.
+Evidence and confidence
+
+Confidence: High, confirmed by a detailed work-status message.
+
+The accessible source is a prior message describing completed branches, files, root causes, and local test results. It does not independently prove that the PRs were merged into the main release branch.
+
+Resume relevance
+
+This demonstrates:
+
+Shared-component engineering.
+Framework migration compatibility.
+Full-stack debugging.
+Regression awareness.
+Legacy behavior analysis.
+Reusable fixes affecting multiple screens.
+Workstream 2: UNID quantity insertion and Hibernate identifier-generation analysis
+Task or problem
+
+A UNID Master workflow displayed a false duplicate-record error when a new quantity row was inserted. Other related rows could save, but quantity inserts failed.
+
+Your contribution
+
+You reproduced the issue on an environment, differentiated successful and failing child-row operations, verified that the browser payload reached the backend, and traced the user-facing duplicate message to an underlying database constraint failure. You then connected the failure to a shared identifier generator whose counter was behind existing IDs.
+
+Technical approach
+Reproduced specific combinations of header and child-row operations.
+Ruled out a JavaScript payload problem.
+Inspected database constraints and identifier state.
+Analyzed the effect of allocationSize=1 introduced during JDK 21/Hibernate migration.
+Proposed:
+A DBA-approved counter correction.
+Pre-check and post-check SQL.
+A rerunnable update.
+Rollback guidance.
+Improved Java-side error logging.
+Considered restoring legacy identifier behavior but correctly flagged it as a wider shared-platform change requiring regression testing.
+Outcome
+
+A later status discussion identifies this defect as fixed. However, the accessible history does not establish whether the final production solution was the counter update, a code change, or a combined approach.
+
+Evidence and confidence
+
+Confidence: High for investigation and root-cause analysis.
+ Confidence: Medium for the exact final implementation.
+
+Resume relevance
+
+This is strong evidence for:
+
+Complex root-cause analysis across UI, backend, ORM, and database.
+Hibernate migration understanding.
+Risk-aware solution design.
+Defensive production-change planning.
+Workstream 3: Shipment pharma-request and queue compatibility defect
+Task or problem
+
+A pharma-request screen had multiple issues that initially appeared related:
+
+Search returned no records.
+Submission later failed with an HTTP 500 and queue-class NoSuchMethodError.
+A separate path for existing shipment data produced an unexpected error after the BeanUtils upgrade.
+Your contribution
+
+You helped separate the problems rather than treating them as one defect:
+
+Verified that missing search results were caused by unavailable test data in the target environment.
+Queried and compared records across environments.
+Investigated a queue-service compatibility failure introduced by differences between generated JDK 21 classes and the legacy queue JAR model.
+Compared the migrated branch with the legacy release branch.
+Evaluated two migration approaches and prepared a JDK 8-parity branch strategy.
+Verified core flows locally after the queue fix.
+Identified the existing-shipment BeanUtils problem as a separate defect outside the original scope.
+Technical approach
+SQL validation of test-data availability.
+Git comparison between legacy and migrated branches.
+Analysis of generated schema-object method signatures.
+Gradle WAR dependency inspection.
+Spring bean and service-generation review.
+Java numeric-cast correction from a specific numeric implementation to a more general numeric type.
+Local validation of save, submit, and upload behavior.
+Scope management to prevent an unrelated BeanUtils defect from being bundled into the original issue.
+Outcome
+
+The accessible history states that:
+
+Search worked after data was available.
+The queue NoSuchMethodError was fixed and verified locally.
+Save, submit, and upload worked for new records.
+Trucking built successfully with the relevant changes.
+The existing-shipment path remained a separate compatibility issue requiring its own handling.
+
+The exact merge status of the alternative queue implementation or associated PRs is not established.
+
+Evidence and confidence
+
+Confidence: High for diagnosis and local verification.
+ Confidence: Medium for final branch selected and release adoption.
+
+Resume relevance
+
+This is one of your strongest workstreams because it demonstrates:
+
+Cross-module debugging.
+Migration compatibility.
+Legacy code comparison.
+Database validation.
+Dependency packaging.
+End-to-end functional testing.
+Deliberate scope control.
+Workstream 4: Multi-application routing between local and remote environments
+Task or problem
+
+You needed to test one application locally while relying on another application hosted remotely. Broad routing rules incorrectly sent some shared requests to the wrong backend, resulting in lookup, availability, navigation, cookie, and context-path problems.
+
+Your contribution
+
+You iteratively analyzed:
+
+Which application owned each endpoint.
+Whether a request should route to local Shipment or remote Flight.
+How query parameters influenced routing.
+How response redirects exposed internal context paths.
+How identical session-cookie names could conflict.
+Whether a remaining failure was caused by Apache routing or application logic.
+Technical approach
+Apache HTTP Server reverse-proxy and rewrite-rule analysis.
+AJP routing to local Tomcat.
+HTTP routing to a remote server.
+Request classification by endpoint and query parameter.
+ProxyPassReverse and cookie-path reasoning.
+Response Location header rewriting.
+Browser network and console inspection.
+Correlation with local Tomcat logs.
+Avoidance of further routing changes once logs showed that the request reached the intended application.
+Outcome
+
+Evidence supports that lookup routes and general cross-WAR routing were made functional during investigation. The later availability-flow failure was narrowed to endpoint ownership and application-side processing, rather than a generic proxy failure.
+
+The accessible history does not prove the final availability flow reached full end-to-end success.
+
+Evidence and confidence
+
+Confidence: High for the investigation and routing configuration work.
+ Confidence: Medium for final closure of every related issue.
+
+Resume relevance
+
+This demonstrates:
+
+Environment integration.
+HTTP troubleshooting.
+Reverse-proxy configuration.
+Distributed application debugging.
+Session and redirect analysis.
+Practical local-development enablement.
+Workstream 5: Build, dependency, and WAR-packaging troubleshooting
+Task or problem
+
+The multi-module application experienced several build failures that had different causes:
+
+Incorrect module identifiers.
+Old QueryDSL coordinates combined with newer versions.
+Removed Hibernate artifacts.
+Missing external UI artifacts.
+Invalid Mockito artifact selection.
+Locked build outputs.
+Old custom Gradle plugin artifacts.
+Repository authentication or certificate failures.
+Your contribution
+
+You repeatedly categorized failures correctly instead of treating all build errors as source-code failures. Documented work includes:
+
+Correcting a module-name mismatch before the build could load its component definition.
+Successfully generating a rate-distribution WAR.
+Isolating TACT as the source of transitive QueryDSL/Hibernate dependencies.
+Recognizing that com.mysema.querydsl coordinates were incompatible with QueryDSL 5.x.
+Tracing a custom Gradle plugin property error to an older compiled plugin artifact than the checked-out source.
+Distinguishing artifact-not-found, authentication, certificate, file-lock, and compilation problems.
+Technical approach
+Reviewed Gradle task failures and dependency chains.
+Used source searches to locate old group IDs and version variables.
+Tested module inclusion and exclusion combinations.
+Compared working and failing WAR compositions.
+Inspected custom plugin source against the plugin JAR actually resolved by Gradle.
+Used branch and repository comparisons to identify missing or unpublished artifacts.
+Outcome
+
+Verified outcomes include:
+
+Successful build and publication of the rate-distribution WAR in approximately 54 seconds in one recorded run.
+Identification of TACT-specific dependency blockers.
+Identification of invalid/deprecated dependency coordinates.
+Identification of a plugin-runtime mismatch rather than an error in the current source.
+Correct classification of several failures as repository, environment, or process-lock issues.
+Evidence and confidence
+
+Confidence: High.
+
+Resume relevance
+
+This demonstrates:
+
+Build engineering.
+Dependency management.
+Repository troubleshooting.
+Module isolation.
+Release packaging.
+Strong diagnostic discipline.
+Workstream 6: Tomcat and Spring startup diagnostics
+Task or problem
+
+Application deployments failed for multiple independent reasons, including:
+
+Debug ports already in use.
+Missing JNDI resources.
+Ambiguous Spring bean injection.
+Missing classes in packaged WARs.
+Null instance configuration during static initialization.
+Application startup failing even though Tomcat itself was running.
+Your contribution
+
+You read startup logs beyond the initial warning lines and followed exception chains to the deepest cause. You differentiated:
+
+Tomcat startup from application-context startup.
+Database connectivity from JNDI binding.
+Warning-level missing filters from fatal bean-creation failures.
+Environmental configuration problems from migration code defects.
+Technical approach
+Process and port inspection using Windows networking and process tools.
+Tomcat log analysis.
+Spring BeanCreationException dependency-chain tracing.
+JNDI resource-name validation.
+Review of application-context and packaged-class availability.
+Analysis of null unboxing during static initialization.
+Outcome
+
+You established precise root causes in several cases:
+
+JDWP startup conflict due to an occupied debug port.
+Missing JMS connection-factory JNDI binding.
+Multiple DataSource beans causing ambiguous injection.
+Instance-ID loading failure leading to a repository initialization NPE.
+
+The accessible history does not consistently show the final environment change or redeployment after each diagnosis.
+
+Evidence and confidence
+
+Confidence: High for diagnosis.
+ Confidence: Medium for final remediation.
+
+Resume relevance
+
+This demonstrates:
+
+Production-style log analysis.
+Spring internals.
+Tomcat configuration.
+Dependency-chain reasoning.
+Environment-versus-code separation.
+Workstream 7: Infinispan cache migration behavior
+Task or problem
+
+After an Infinispan upgrade, requesting a cache that was not defined on the remote server could return null, creating runtime failures or preventing SIT scenarios from working.
+
+Your contribution
+
+You reviewed a defensive code change that:
+
+Retrieves the remote cache.
+Checks for a missing cache.
+Logs a warning.
+Falls back to a disabled cache implementation so the application can continue.
+
+You also coordinated or communicated that required cache keys needed to be configured in target environments before validation could complete.
+
+Technical approach
+Remote-cache API behavior comparison across versions.
+Null-safety and graceful-degradation analysis.
+Separation of an application fallback from server-side cache provisioning.
+Outcome
+
+A compatible fallback strategy was identified, while the required environment cache definitions still needed infrastructure or teammate action.
+
+Evidence and confidence
+
+Confidence: Medium.
+
+The history confirms investigation and understanding but does not conclusively show that you authored and merged the cache fallback.
+
+Resume relevance
+
+This demonstrates:
+
+Distributed cache migration awareness.
+Resilience design.
+Environment coordination.
+Defensive coding analysis.
+Workstream 8: Frontend grid behavior and UI migration
+Task or problem
+
+Frontend components behaved differently after migration, including:
+
+Previous/next grid navigation.
+Row selection and refresh behavior.
+Lookup-popup styling.
+Layout and button alignment.
+Empty input handling before backend submission.
+Your contribution
+
+The strongest documented implementation is the shared grid pagination correction. Other discussions show active analysis of:
+
+Re-selecting the correct row after a queue refresh.
+Converting empty UI values to null.
+Comparing legacy and migrated popup styling.
+Identifying CSS, jqGrid, jQuery UI, and inherited-style causes.
+Technical approach
+JavaScript control-flow analysis.
+Grid state and selected-row handling.
+Legacy-versus-modern grid behavior comparison.
+DOM and applied-CSS inspection planning.
+Shared-component regression validation.
+Outcome
+
+The pagination fix is recorded as locally verified. The styling work is supported as investigation and planning, but not as a clearly completed implementation.
+
+Evidence and confidence
+
+High confidence: pagination fix.
+ Medium confidence: queue/grid refresh work.
+ Low-to-medium confidence: final styling implementation.
+
+Resume relevance
+
+This demonstrates frontend debugging and maintenance within a full-stack enterprise application.
+
+Workstream 9: SQL verification and business-data troubleshooting
+Task or problem
+
+Some application failures or empty results were caused by data conditions rather than code, including:
+
+Missing pharma-request test records.
+Duplicate system-parameter values.
+Stock/shipment record mismatch.
+Identifier counters lagging behind existing data.
+Your contribution
+
+You wrote or used focused SQL queries to compare environments, count matching rows, identify unmatched records, inspect configurable system values, and prepare counter-correction plans.
+
+Technical approach
+Read-only validation queries.
+Cross-schema joins and NOT EXISTS.
+Date-bounded counts.
+System-parameter inspection.
+Pre/post-update checks and rollback planning.
+Correlation of SQL findings with application behavior.
+Outcome
+
+You prevented missing test data and configuration differences from being misclassified as code regressions. In the pharma-search case, the data gap was established before queue-related submission debugging continued.
+
+Evidence and confidence
+
+Confidence: High.
+
+Resume relevance
+
+This demonstrates data-driven debugging and environment validation.
+
+Workstream 10: Git, branching, and PR hygiene
+Task or problem
+
+Generated deployment files and generated source timestamps repeatedly modified the working tree, complicating branch switching and PR preparation.
+
+Your contribution
+
+You reviewed diffs, distinguished generated changes from source changes, restored unwanted files, managed stashes, updated release branches, and kept generated deployment metadata out of issue-specific PRs.
+
+Technical approach
+git status, git diff, git restore, git stash, branch switching, pull, and merge workflows.
+Comparison of legacy, release, and defect branches.
+Preservation of unrelated local work while preparing clean branches.
+Avoidance of committing generated deployment metadata.
+Outcome
+
+The history shows clean working trees restored and latest release changes prepared for merging into defect branches. It also shows deliberate preservation of unrelated work when creating alternative implementation branches.
+
+Evidence and confidence
+
+Confidence: High.
+
+Resume relevance
+
+This supports engineering professionalism, delivery discipline, and maintainable source-control practices.
+
+E. Top evidence-backed resume points, ranked by strength
+
+These are candidate experience points, not final resume bullets.
+
+1. Resolved cross-layer JDK 21 migration defects in shared application components
+
+Why strong: Demonstrates backend, frontend, framework, and regression capability.
+
+Direct contribution: Worked on shared fixes for property conversion, Spring caching, and grid pagination across multiple screens.
+
+Evidence: Specific files, root causes, branches, and local validation results were documented.
+
+Confidence: High.
+
+2. Diagnosed and fixed a Shipment queue compatibility failure by comparing migrated and legacy implementations
+
+Why strong: Complex modernization issue spanning generated classes, JAR packaging, Spring configuration, service interfaces, and a dependent Trucking module.
+
+Direct contribution: Compared release branches, analyzed method-signature incompatibility, evaluated migration alternatives, and validated business flows locally.
+
+Evidence: Queue-class NoSuchMethodError, JDK 8 parity plan, packaging changes, and local save/submit/upload verification.
+
+Confidence: High for diagnosis and local validation; medium for final release adoption.
+
+3. Root-caused a false duplicate-record defect to Hibernate/shared ID-generator state
+
+Why strong: Required ruling out UI and payload issues, identifying a database constraint collision, and linking it to migration-era identifier configuration.
+
+Direct contribution: Reproduced the failure, isolated the failing child entity, proposed DBA-safe validation/update/rollback steps, and considered wider platform risks.
+
+Evidence: Detailed defect analysis and later indication that the defect was fixed.
+
+Confidence: High for analysis; medium for exact final fix.
+
+4. Built and troubleshot multi-module WAR packages in a large Gradle application
+
+Why strong: Demonstrates real build and release engineering rather than only coding.
+
+Direct contribution: Generated a rate-distribution WAR, isolated TACT-specific dependency failures, and diagnosed invalid QueryDSL/Hibernate coordinates and repository issues.
+
+Evidence: Recorded successful build and module-isolation comparisons.
+
+Confidence: High.
+
+5. Configured and debugged a hybrid local/remote integration environment
+
+Why strong: Shows practical full-stack infrastructure troubleshooting.
+
+Direct contribution: Worked on reverse-proxy routing between local and remote WARs, AJP/HTTP backends, endpoint ownership, response redirects, and session propagation.
+
+Evidence: Detailed Apache/Tomcat routing investigation and endpoint-level validation.
+
+Confidence: High for work performed; medium for complete final closure.
+
+6. Distinguished code defects from data and environment issues during SIT
+
+Why strong: Prevents unnecessary code changes and shortens root-cause investigation.
+
+Direct contribution: Used SQL and environment comparisons to prove missing shipment/pharma test data, configuration differences, and artifact availability problems.
+
+Evidence: Cross-environment counts, data-seeding request, and separation of missing-data search behavior from queue submission failure.
+
+Confidence: High.
+
+7. Traced Spring/Tomcat startup failures through long dependency chains
+
+Why strong: Demonstrates advanced operational debugging.
+
+Direct contribution: Identified missing JNDI resources, ambiguous datasource injection, occupied debug ports, and instance-configuration failures rather than stopping at superficial warnings.
+
+Evidence: Multiple startup investigations with specific root causes.
+
+Confidence: High for diagnosis.
+
+8. Identified a custom Gradle plugin runtime/source mismatch
+
+Why strong: A subtle build issue where the checked-out plugin source contained a property but Gradle loaded an older compiled artifact.
+
+Direct contribution: Searched plugin source, buildscript usage, and dependency resolution to establish that runtime code differed from repository source.
+
+Evidence: The plugin source had the property while the loaded extension rejected it.
+
+Confidence: High.
+
+9. Applied legacy-compatible fixes selectively instead of reverting whole framework upgrades
+
+Why strong: Shows migration judgment.
+
+Direct contribution: Preserved upgraded libraries while restoring only the required legacy behavior for empty primitive conversion, cache-key parameters, grid pagination, and queue interfaces.
+
+Evidence: Shared-component and queue investigations.
+
+Confidence: High.
+
+10. Maintained disciplined branch and PR hygiene in a high-change migration repository
+
+Why strong: Useful supporting point for engineering ownership.
+
+Direct contribution: Managed issue branches, release synchronization, stashes, generated artifacts, and alternative implementation PRs without mixing unrelated changes.
+
+Evidence: Branch histories and repeated generated-file cleanup.
+
+Confidence: High.
+
+11. Performed end-to-end validation beyond the immediately failing operation
+
+Why strong: Shows quality mindset.
+
+Direct contribution: Validated create, edit, add-child, lookup, pagination, save, submit, upload, and dependent-module builds where applicable.
+
+Evidence: Masters shared fixes and Shipment pharma-request testing.
+
+Confidence: High.
+
+F. Technologies and tools, with evidence and confidence
+Technology or tool	How it was used	Evidence	ConfidenceJava	Backend services, repositories, validation, utilities, entity/data-copy logic, queue integration	Java classes and fixes were inspected across shared utilities, Shipment, Masters, Trucking, and repositories.	High, actively used
+JDK 21	Target runtime and modernization baseline	Builds, branches, Tomcat JVM, and migration defects explicitly reference JDK 21.	High, actively used
+Spring Framework 6.x	Bean configuration, caching, dependency injection, web/resource handling	Spring 6 cache-key behavior, bean ambiguity, and resource exceptions were investigated.	High
+Hibernate 6	ORM, SQL execution, identifier generation, migration compatibility	Hibernate 6 dependencies, ID-generation behavior, and SQL logs were analyzed.	High
+Jakarta APIs	Migration from older Java EE namespaces and generated service code	Jakarta XML Web Services and JDK 21 migration configuration were present in generated and build files.	Medium-high
+JPA	Entity persistence and repository behavior	Repository, entity, identifier, and Hibernate persistence issues were investigated.	High
+QueryDSL 5.x	Dependency migration and domain-module builds	Old com.mysema coordinates and new QueryDSL versions were traced in Gradle dependencies.	High for build/dependency work; medium for application query authoring
+Gradle 8.x	Multi-module builds, custom plugins, WAR packaging, dependency analysis, publishing	Numerous build publish commands, dependency failures, and custom-plugin investigations.	High
+Apache Tomcat 10.1	Local deployment, startup diagnostics, multiple application instances, debugging	Tomcat startup, ports, WAR deployment, logs, JNDI, and application-context failures were handled.	High
+Apache HTTP Server	Reverse-proxy routing between local and remote applications	Rewrite rules, proxy backends, cookie paths, redirects, and endpoint ownership were analyzed.	High
+AJP and HTTP proxying	Routing local and remote backend requests	Local application used AJP while another application was reached through HTTP.	High
+JavaScript	UI state, request handling, null conversion, navigation, and grids	Ternary behavior, selected-row reload logic, and shared grid navigation were analyzed.	High
+jQuery/jqGrid/free-jqGrid	Enterprise grid pagination, filtering, selection, and styling	Migration differences caused pager and visual defects; a pagination correction was documented.	High
+HTML/CSS	Lookup popup styling and migrated UI layout	CSS/theme differences and popup layout were investigated.	Medium, investigation supported
+Oracle-style SQL	Data validation, cross-schema checks, test-data comparison, system parameters	Queries used schema-qualified tables, date literals, joins, NOT EXISTS, and counts.	High
+Infinispan / Hot Rod	Remote caching and missing-cache compatibility	Missing cache definitions and null-return behavior after upgrade were analyzed.	Medium-high
+Apache CXF	Generated web-service classes and build-generated source	CXF-generated source and service-plugin behavior appeared in builds and Git cleanup.	Medium
+JMS/JNDI	Application startup and messaging-resource configuration	Missing connection-factory binding and datasource lookups were traced.	Medium-high
+Git	Branch creation, merges, release synchronization, stashes, restore, diff, clean working trees	Repeated defect-branch and release-branch workflows were documented.	High
+Azure DevOps	Work-item tracking, branches, PR references, artifact repositories	Defect status, commits/PRs, repository packages, and build dependencies were referenced.	High
+Jenkins	CI build-log investigation and artifact authentication diagnosis	CI failures caused by repository authentication were analyzed.	Medium-high
+PowerShell	Log searching, timed polling, source/build inspection, process checks	PowerShell scripts were used to inspect logs and repository data.	High
+Windows command-line tools	Process, port, file, build, and deployment troubleshooting	netstat, tasklist, findstr, Gradle, Git, and Tomcat commands were repeatedly used.	High
+Commons BeanUtils	Migration compatibility and object-property mapping	Version behavior change was traced to primitive conversion and existing-shipment mapping errors.	High
+Mockito	Test dependency troubleshooting	Invalid mockito-all with Mockito 5.x was identified as a build dependency issue.	Medium, encountered more than substantively used
+Browser DevTools	Network payload, response, JavaScript, cookie, and routing analysis	Payload checks, request routing, module loading, and cookie analysis were part of investigations.	Medium-high
+Technologies not safe to claim as project usage solely from profile history
+
+Your broader profile includes React, FastAPI, Python, generative AI frameworks, MCP, RAG, and cloud technologies. However, the accessible Wipro project discussions do not establish that these were part of this specific enterprise modernization assignment. They should remain under general skills or separate projects unless you confirm direct project usage.
+
+G. Verified outcomes and metrics
+Outcomes supported by accessible history
+
+Four SIT defects across three shared files were described as completed and locally verified in one consolidated update covering Masters screens.
+
+A shared property-copy utility was recorded as being exercised 53 times during regression checks across the cited screens without errors. This is a test-execution count, not a coverage percentage.
+
+A rate-distribution WAR build and publish completed successfully in 54 seconds in one recorded local run. This should not be presented as a performance achievement unless normal build time is known.
+
+For the pharma-request workflow, the available update states that:
+
+Search worked after test-data correction.
+Save, submit, and upload were verified locally.
+A dependent Trucking build completed successfully.
+
+A test-data comparison showed zero matching records in one target environment and 34 matching records in a reference environment for the queried pharma-request data range. This is useful evidence of data-driven diagnosis, but the numbers should not be used as business impact.
+
+One status report showed 11 defects assigned to you, with ten open and one resolved at that point. This is valid workload context, but it is not a completion metric.
+
+An earlier issue list showed at least the following work items in resolved state under your name:
+
+Checklist upload defect.
+Checklist action defect.
+Alternate-airport-contact submit defect.
+Workflow submit defect. Some items were later shown as active again, so reopened or environment-dependent defects must not be counted as permanently closed without current ADO verification.
+
+The UNID defect was later stated to be fixed, but the final technical remedy and SIT closure state are not present in the accessible record.
+
+Metrics not established
+
+The history does not support claims such as:
+
+Percentage improvement in productivity.
+Hours or days saved.
+Number of users affected.
+Reduction in production incidents.
+Performance improvement.
+Test coverage percentage.
+Total defects permanently closed by you.
+Number of PRs merged.
+Number of code commits.
+Production release count.
+
+These should not appear in the resume until verified.
+
+H. Potential achievements or contributions that need your confirmation
+
+Did all four shared Masters fixes enter the release branch?
+ Local verification is documented, but merge and SIT closure are not.
+
+Was the queue-transaction JDK 8-parity approach selected and merged?
+ The history includes competing approaches and multiple PRs.
+
+Did you author the BigDecimal to Number repository fix, or only analyze/review it?
+
+Was the UNID generator issue resolved using a database counter correction, a Hibernate code/configuration change, or both?
+
+Was the Apache hybrid routing setup fully stabilized for lookup and availability flows?
+
+Did you personally implement the Infinispan null-cache fallback, or was it a team-provided change you evaluated?
+
+How many of your assigned SIT defects were finally closed after retesting?
+ Some accessible entries show defects moving between Resolved and Active.
+
+Were you responsible for generating and deploying WARs to a shared environment, or only for local builds and deployment verification?
+
+Did you write or maintain unit tests for the repository and shared utility fixes?
+ Test-file names appear, but authorship and execution are not fully established.
+
+Was AI-assisted analysis formally used as part of your team's approved development workflow?
+ The conversations show substantial AI-assisted engineering, but the organization's official process and disclosure rules are unknown.
+
+I. Important gaps
+
+The following details could not be established reliably:
+
+Your official project title.
+Your exact joining date to this project, as distinct from joining Wipro.
+The official client-safe project description approved for external use.
+Your formal module ownership.
+Team size and your position within the team.
+Whether you participated in requirement analysis or mainly SIT stabilization.
+Number of PRs authored, approved, and merged.
+Current closure state of individual defects.
+Exact production or SIT deployment responsibilities.
+Whether you attended design reviews, code reviews, DSUs, or client calls as a regular responsibility.
+Whether you owned any release or build pipeline.
+Whether tests were automated, manual, or mixed for each fix.
+Whether AI-generated suggestions were independently reviewed according to company policy.
+Measured business impact of the fixes.
+Whether the system was ultimately deployed to production on JDK 21.
+Which technologies were directly coded by you versus only encountered while diagnosing existing code.
+J. Questions you should answer to fill the gaps
+
+What is the approved external description of the project and business domain?
+
+Which modules were you formally assigned to, and which ones did you only support temporarily?
+
+How many defects did you personally take from investigation through merged fix and successful SIT closure?
+
+Which of the documented fixes were merged into the main JDK 21 release branch?
+
+Did you write the final code for the BeanUtils, Spring cache-key, grid pagination, queue, UNID, and Infinispan fixes, or did you analyze/review some of them?
+
+How many pull requests did you create, and how many were merged?
+
+Did you deploy WARs to shared development/SIT servers, or only build and deploy locally?
+
+What testing did you personally perform: unit tests, integration tests, UI validation, regression tests, SQL verification, or all of these?
+
+Did the JDK 21 modernization reach production, and if so, what was your contribution to the release?
+
+Can you verify any measurable outcomes, such as number of screens stabilized, defects closed, modules built, regression scenarios executed, or recurring manual steps automated?
+
+K. Source coverage and limitations
+Sources inspected
+
+I used:
+
+Accessible prior Copilot conversation history returned for this request.
+Work-related technical discussions from approximately late September through October 2026.
+Saved account context about your role, skills, projects, and work preferences.
+Recent conversation summaries involving Shipment, Flight, Tomcat, Apache, Gradle, Git, database validation, and JDK 21 migration work.
+
+The retrieved history included discussions about:
+
+JDK 21 migration defects.
+Masters, Shipment, Schedules, ULD, TACT, rate distribution, EIX, and Trucking.
+Local and remote routing.
+WAR creation and deployment.
+Database and test-data verification.
+Build failures.
+Git and PR preparation.
+Defect status reports.
+Sources not inspected or unavailable
+
+I did not have direct access to:
+
+Your complete Azure DevOps project.
+Current work-item states.
+Source repositories or live branches.
+Pull-request records.
+Commit history.
+Jenkins configuration.
+Internal documentation portals.
+Current application logs.
+Official Wipro HR/project records.
+Client-approved project descriptions.
+Every historical Copilot conversation in the account.
+
+Some prior conversations contained uploaded logs or configuration files, but only the conversation excerpts and conclusions available through history retrieval were used here. I did not reopen the original internal files.
+
+Accuracy limitation
+
+A conversation showing that you asked about a proposed solution does not prove you implemented it. Therefore:
+
+Work with clear local verification was labeled confirmed.
+Root-cause investigations without final closure were labeled partially supported.
+Proposed or alternative fixes were not presented as completed achievements.
+Team-level defect statistics were not attributed to you as personal delivery.
+Internal system names, credentials, server addresses, source code, proprietary URLs, schemas, and personal identifiers were excluded or generalized.
+
+This dossier is strong enough to form the factual foundation for your resume, but the final experience section should be written only after you confirm the items in Sections H and J.
