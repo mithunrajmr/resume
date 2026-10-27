@@ -1,0 +1,116 @@
+# Task: Build My Wipro Project Experience and Technical Work Dossier
+
+Act as a technical career analyst. I want you to reconstruct and document my actual work experience at Wipro using the conversation history, technical questions, troubleshooting discussions, project-related context, and other work information available to you in this account.
+
+**Do not write my resume yet.** First, create a detailed, factual dossier that I can use to update my resume accurately.
+
+## 1. Review available history
+
+Search and review the work-related context available to you, including:
+- Previous conversations about my Wipro project and day-to-day work.
+- Technical questions I asked and problems I investigated or resolved.
+- Code analysis, debugging, development, enhancement, testing, and troubleshooting discussions.
+- Work involving legacy or existing application upgrades, modernization, business logic, workflows, and AI-assisted development.
+- Technologies, frameworks, tools, systems, and development environments I actually used or discussed in a work context.
+- Problems I solved, approaches I explored, decisions I made, and solutions I contributed to.
+- Collaboration, ownership, responsibilities, and any evidence of increasing responsibility.
+
+Use whatever history and work context you can legitimately access. Do not assume that every past conversation is accessible. If you cannot inspect a source, state that limitation rather than pretending you reviewed it.
+
+## 2. Establish my project context
+
+Identify what can be established about:
+- My project, client, business domain, and application purpose.
+- The application architecture and its major components.
+- The existing system and what is being upgraded, enhanced, or modernized.
+- My specific responsibilities and contributions.
+- The development lifecycle and workflow I participate in.
+- How AI-assisted engineering is used in the actual work, if applicable.
+
+Separate confirmed information from reasonable inferences and unknown details. Do not disclose confidential client information, source code, credentials, internal URLs, proprietary implementation details, personal data, or restricted company information. Use only information that is appropriate to share outside the company.
+
+## 3. Reconstruct my technical work
+
+For each distinct task or type of work you can identify, provide:
+
+1. **Task or problem:** What needed to be investigated, fixed, developed, or improved?
+2. **My contribution:** What did I personally ask, analyze, implement, test, troubleshoot, or help deliver?
+3. **Technical approach:** What methods, tools, languages, frameworks, or engineering concepts were involved?
+4. **Outcome:** What was resolved, changed, validated, or delivered?
+5. **Evidence and confidence:** Which accessible conversation or context supports this? Label it as confirmed, partially supported, or uncertain.
+6. **Resume relevance:** Explain whether this demonstrates software development, debugging, application modernization, AI-assisted engineering, problem-solving, testing, ownership, or another transferable engineering skill.
+
+Group related discussions into coherent workstreams instead of listing every conversation separately. Do not claim that asking about a solution proves I implemented it or that a proposed fix was successfully applied.
+
+## 4. Identify the strongest resume evidence
+
+Create a shortlist of my 8–12 strongest potential experience points, ranked by relevance to software developer and full-stack engineering roles.
+
+Prioritize:
+- Actual application development and enhancement.
+- Complex debugging and root-cause analysis.
+- Understanding and adapting existing business logic.
+- AI-assisted code analysis, development, or modernization, where supported by evidence.
+- Testing, validation, reliability, and quality improvements.
+- Meaningful technical decisions and problem-solving.
+- Ownership, collaboration, and delivery.
+- Measurable outcomes, but only where documented.
+
+For every potential point, show the underlying evidence and distinguish my direct contribution from team-level work.
+
+## 5. Extract technologies accurately
+
+Create a table with these columns:
+
+| Technology or tool | How it was used | Evidence | Confidence |
+|---|---|---|---|
+
+Distinguish technologies I actually used from those I merely asked about, encountered in existing code, or learned about. Do not add technologies just because they are commonly used in similar projects.
+
+## 6. Identify genuine impact and metrics
+
+Look for verifiable information such as:
+- Features or modules completed.
+- Bugs or issues resolved.
+- Workflows improved.
+- Manual steps reduced or automated.
+- Testing coverage or defects addressed.
+- Performance or processing improvements.
+- Delivery timelines, scope, or volume.
+- Repeated tasks made more efficient through AI-assisted workflows.
+
+Include numbers only when the available evidence supports them. Never invent percentages, time savings, productivity gains, project counts, user counts, or business impact. If an important metric is unavailable, identify what I would need to verify.
+
+## 7. Protect confidential information
+
+This output is intended to help me prepare an external resume. Exclude confidential code, secrets, credentials, proprietary architecture details, internal system names, restricted URLs, and sensitive client information. Keep the project description at a level that can appropriately be shared with recruiters.
+
+Do not copy large amounts of internal source code or reproduce confidential conversation content unnecessarily.
+
+## 8. Final output format
+
+Return the dossier in the following order:
+
+A. Executive summary of my actual role and project context.
+
+B. Project and application overview.
+
+C. My responsibilities and recurring workstreams.
+
+D. Detailed technical work inventory, grouped by workstream.
+
+E. Top 8–12 evidence-backed resume points, ranked by strength.
+
+F. Technologies and tools, with evidence and confidence.
+
+G. Verified outcomes and metrics.
+
+H. Potential achievements or contributions that need my confirmation.
+
+I. Important gaps: details you could not establish from available history.
+
+J. A concise list of 5–10 specific questions I should answer to fill the gaps.
+
+K. Source coverage: which history or context you could inspect, which sources were unavailable, and any limitations affecting completeness.
+
+**Final requirements:** Be detailed, factual, and specific. Preserve technical terminology where useful. Avoid generic descriptions such as “worked on software development.” Do not invent details, claim unverified implementation, expose confidential information, or write the final resume yet. I will review this dossier and use it to prepare an accurate resume update.
