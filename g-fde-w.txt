@@ -1,0 +1,575 @@
+Skip to main content
+
+Wipro
+SharePoint
+
+
+
+
+MR
+
+Discover
+
+Publish
+
+Build
+
+OneDrive
+
+Wipro AI Academy
+CalendarAccountsSupportKnowledge HubLearning PathsReports
+
+Internal - General Use - M365
+FDE Learning
+
+Google Cloud FDE Learning Path
+
+AI Academy
+​
+ 
+
+The FDE Learning Path consists of four levels designed for progressive skill development. Learners are expected to complete each level sequentially before moving to the next
+
+FDE Level 1
+
+Build baseline AI and deployed-engineering fluency.
+
+FDE Level 2
+
+Develop expertise within a specific discipline, platform or technology ecosystem.
+
+FDE Level 3
+
+Apply expertise in realistic customer, solutioning and deployment scenarios.
+
+FDE Level 4
+
+Recognized for demonstrated customer and business impact, not certification completion alone.
+
+ 
+
+FDE4:10.
+How to Begin Your Learning Path and Progress Through Levels
+
+ 
+
+Step 1: Register	Step 2: Complete Training	Step 3: Complete Assessment	Step 4: Complete Hands-On Labs	Step 5: Claim Your Badge
+Register	
+FDE Level 1 - TOC
+
+FDE Level 1- Assessment
+
+FDE Level 1 - Labs
+
+Claim Your Badge
+FDE Level 2 - TOC
+
+FDE Level 2 - Assessment
+
+FDE Level 2 - Labs
+
+Claim Your Badge
+FDE Level 3 - TOC	FDE Level 3 - Assessment	FDE Level 3 - Labs	Claim Your Badge
+ 
+
+Before you start your learning journey
+Complete the below steps to ensure your certification is validated successfully.
+
+ 
+
+Step 1
+Step 2
+Step 3
+Login / Create your Qwiklabs account
+
+Use your Wipro work email to register on Level Up. 
+
+Register Now / Login
+
+don't use your ADID or personal ids for login
+
+CM Connect 
+
+Ensure your CM connect lists the same email in you "Work / Professional Email." Linking instructions
+
+ Click Here
+
+DRP Profile 
+
+Ensure you have an active Delivery Readiness Portal profile with the same email. Set up instructions
+
+Click Here
+
+ 
+
+FDE Level 1
+
+What This Course Covers and What You Will Achieve
+
+Course Description	Course Outcome
+FDE Level 1 is an entry-level course designed to help employees begin their Forward Deployment Engineer (FDE) learning journey. The program focuses on building foundational AI knowledge, core deployed-engineering capabilities, essential certifications, and the mindset required for customer-facing engineering roles.
+
+ 
+
+Key topics covered:
+
+Core AI Learning
+
+Common Deployed-Engineering Skills
+
+Foundational Certifications
+
+Communication & Mindset Shift
+
+Upon successful completion of FDE Level 1, learners will have established a strong foundation in AI and deployed-engineering concepts, demonstrated core technical and professional skills, and completed the required foundational learning and certifications.
+
+Expected Outcome:
+
+Gain baseline proficiency in AI and deployed-engineering fundamentals.
+
+Develop essential customer-facing communication and professional mindset skills.
+
+Complete the prescribed foundational learning pathway and certifications.
+
+Demonstrate learning completion by submitting required training evidence and relevant Cloud Service Provider (CSP) certification credentials.
+
+Completion Criteria: 
+
+✅ Training completion evidence submitted
+✅ Required CSP certifications achieved and validated
+
+ 
+
+Learning Modules and Completion Criteria
+
+Course	Duration	Link	Completion Criteria
+1)  The Complete Generative AI and Python Programming Bootcamp	24.5 Hours	
+Click here
+
+Training Completion Record
+2)  AI Governance: The Fundamentals of AI Governance	03.5 Hours	
+Click here
+
+Training Completion Record
+3)  FDE LLM Token Optimization & FinOps for GenAI	05.0 Hours	
+Click here
+
+Training Completion Record
+4) Gemini Enterprise Certified Partner Specialist
+
+Agent Development
+
+Deployment
+
+8 Hours
+
+Click here
+
+Training Completion Record
+5) Generative AI Leader (Training)	7.5 Hours	
+Click here
+
+Training Completion Record
+6)Behavioral / Soft Skills (Complete all courses)
+
+05 Hours
+
+FDE Program - Track 1 | Harvard Business Impact Hub (Recommended for B3 & below)
+
+FDE Program - Track -2 | Harvard Business Impact Hub (Recommended for C1 & above)
+
+ 
+
+In case you are unable to access the platform, you can click the profile activation link provided below. 
+
+ 
+
+Wipro HBR Spark Instance
+
+Training Completion Record
+
+ 
+
+FDE Level 2
+
+What This Course Covers and What You Will Achieve
+
+Course Description	Course Outcome
+FDE Level 2 is an advanced-level program designed to help employees build deep expertise in a specific technology, platform, or domain. The program focuses on developing specialized technical capabilities, platform knowledge, industry expertise, and the communication skills required to drive customer outcomes and solution adoption.
+
+ 
+
+Key topics covered:
+
+Platform Certifications
+
+Tool Proficiency
+
+Technical Depth
+
+Domain/Functional Know-How
+
+Communication & Narrative Proficiency
+
+Upon successful completion of FDE Level 2, learners will have developed specialized expertise in a chosen technology, platform, or domain, enabling them to contribute effectively to customer solutions and deployment engagements.
+
+Expected Outcome:
+
+Gain advanced proficiency in selected platforms, tools, and technologies.
+
+Develop deeper technical and domain-specific expertise relevant to customer needs.
+
+Earn platform-aligned certifications that validate specialized skills.
+
+Demonstrate the ability to articulate technical solutions and business value through effective communication and storytelling.
+
+Apply acquired knowledge to support solution implementation, adoption, and customer outcomes.
+
+ 
+
+Completion Criteria: 
+
+✅ Training completion evidence submitted
+✅ Required platform certifications achieved and validated
+✅ Demonstrated proficiency in the selected technology, platform, or domain
+
+ 
+
+Learning Modules and Completion Criteria
+
+Course	Duration	
+Link
+
+Completion Criteria
+1)  Any One Professional Certification (from below 9)
+
+Professional Cloud Architect (CA)
+
+Professional Data Engineer (DE)
+
+Professional Cloud DevOps Engineer (CDE)
+
+Professional Machine Learning Engineer (MLE)
+
+Professional Database Engineer (CDBE)
+
+Professional Cloud Developer (CD)
+
+Professional Cloud Network Engineer (CNE)
+
+Professional Security Engineer (CSE)
+
+Professional Security Operations Engineer (SOE)
+
+50 Hours	
+ 
+
+Click Here
+Click Here
+
+Click Here
+
+Click Here
+
+Click Here
+
+Click Here
+
+Click Here
+
+Click Here
+
+Click Here
+
+Certification from CSP
+2) Develop Gen AI Apps with Gemini and Streamlit	1.5 Hour	
+Click Here
+
+Hands-on Lab Completion
+3) Getting Started with LangChain + Gemini	1hr 30 min	
+Click Here
+
+  4) Build Your First Agent with Agent Development Kit (ADK)	8 Hours	
+Click here
+
+  5) Build Real World AI Applications with Gemini and Imagen 	1 Hour	
+Click Here
+
+  6) Migrate MySQL Data to Cloud SQL Using Database Migration Service	2 Hours	
+Click Here
+
+  7) Build Infrastructure with Terraform on Google Cloud	1.45 Hours	
+Click Here
+
+8) Digital Transformation and Industry 4.0 Masterclass	04.5 Hours	
+Click Here
+
+9)Behavioral / Soft Skills (Complete all courses)
+
+05 Hours
+
+FDE Program - Track 1 | Harvard Business Impact Hub (Recommended for B3 & below)
+
+FDE Program - Track -2 | Harvard Business Impact Hub (Recommended for C1 & above)
+
+ 
+
+In case you are unable to access the platform, you can click the profile activation link provided below. 
+
+ 
+
+Wipro HBR Spark Instance
+
+Training Completion Record
+
+ 
+
+FDE Level 3
+
+What This Course Covers and What You Will Achieve
+
+Course Description	Course Outcome
+FDE Level 3 is a master-level program designed for employees to apply their expertise in real-world customer engagements, solution design, and deployment scenarios. The program focuses on developing advanced technical depth, hands-on delivery experience, and customer-facing capabilities required to lead successful deployments at scale.
+
+ 
+
+Key topics covered:
+
+Hands-on Delivery
+
+Pilots and Deployments
+
+Advanced Certifications
+
+Domain/Functional Depth
+
+Customer-Facing Participation
+
+Upon successful completion of FDE Level 3, learners will have demonstrated the ability to apply their expertise in real customer environments, lead solution deployments, and drive successful business outcomes through hands-on execution and customer engagement.
+
+ 
+
+Expected Outcome:
+
+Apply advanced technical and domain expertise in real-world customer scenarios.
+
+Lead or actively contribute to pilots, deployments, and production implementations.
+
+Achieve advanced certifications that validate mastery in the selected technology or domain.
+
+Demonstrate hands-on delivery experience and problem-solving capabilities in customer engagements.
+
+Effectively communicate with customers, influence solution adoption, and contribute to business outcomes.
+
+Completion Criteria: 
+
+✅ Training completion evidence submitted
+✅ Required advanced certifications achieved and validated
+✅ Evidence of hands-on delivery, pilot, deployment, or customer-facing participation provide
+
+ 
+
+Learning Modules and Completion Criteria
+
+Topic	Duration	Link	Completion Criteria
+WINGS Advanced (Deployment Engg Persona) Training + Hands-on Lab	10 Hours	Click Here	
+Hands-On Lab Completion Record
+
+OR	 	 
+WEGA Advanced (AI and Data)
+
+10 Hours	
+Click here
+
+  Developing Applications with Cloud Run Functions on Google Cloud	7 Hours	
+Click Here
+
+  Deploy Multi-Agent Systems with Gemini Enterprise Agent Platform	6 Hours	
+Click Here
+
+Google Capstone / Use-Cases 	12 Hours	
+Click Here
+
+Capstone Evaluation & Completion email from Academy / CSP SME 
+
+ Behavioral / Soft Skills (Complete all courses)
+
+05 Hours
+
+FDE Program - Track 1 | Harvard Business Impact Hub (Recommended for B3 & below)
+
+FDE Program - Track -2 | Harvard Business Impact Hub (Recommended for C1 & above)
+
+ 
+
+In case you are unable to access the platform, you can click the profile activation link provided below. 
+
+ 
+
+Wipro HBR Spark Instance
+
+Training Completion Record
+
+INTRODUCTION TO INDUSTRY 5.0	02 Hours	
+Click here
+
+Domain Specific Skill (Any one course to be completed)
+
+~1 Hour
+
+Banking
+Insurance
+Consumer & Transportation
+Energy
+Manufacturing
+Customer Relationship Management
+Finance & Accounts
+Human Capital Management
+Supply Chain Management
+ 
+
+ 
+
+Useful URLs
+
+ 
+
+Replay Google FDE Launch Program 
+
+FDE Lab request form
+
+FAQ 
+
+Certification Exam Voucher Request
+
+Click here to register / nominate 
+
+FDE - Learning Path Framework
+
+Behavioral / Soft Skills exploration recap - B3 and below
+
+Behavioral / Soft Skills exploration recap - C1 and above
+
+AI Academy monthly calendar
+
+ 
+
+ 
+
+
+Archived
+📌 This content is valid until 30 October 2026.
+
+ 
+
+Track
+
+Course	
+Duration
+
+Link
+
+Phase 1A - Gemini CPS 	
+Gemini Enterprise Certified Partner Specialist
+
+Agent Development
+
+Deployment
+
+8 Hours	
+Click Here
+
+Phase 1B - Google Cloud Certifications
+
+       (Any 1 Certification)
+
+Professional Cloud Architect (CA)	50 Hours	
+Click Here
+
+Professional Data Engineer (DE)	50 Hours	
+Click Here
+
+Professional Database Engineer (CDBE)	50 Hours	
+Click Here
+
+Professional Cloud DevOps Engineer (CDE)	50 Hours	
+Click Here
+
+Professional Cloud Developer (CD)	50 Hours	
+Click Here
+
+Professional Machine Learning Engineer (MLE)	50 Hours	
+Click Here
+
+Professional Cloud Network Engineer (CNE)	50 Hours	
+Click Here
+
+Professional Security Engineer (CSE)	50 Hours	
+Click Here
+
+Professional Security Operations Engineer (SOE)	50 Hours	
+Click Here
+
+Phase 2 - Google Cloud Project Ready Specialization	
+Gemini for Google Cloud
+
+7 Hours	
+Click Here
+
+Accelerate Knowledge Exchange with Gemini Enterprise
+
+5 Hours	
+Click Here
+
+Prompt Design in Agent Platform
+
+1 Hours	
+Click Here
+
+Understand Google Cloud Agents
+
+8 Hours	
+Click Here
+
+Develop an App with the Gemini API in Gemini Enterprise Agent Platform
+
+1.5 Hours	
+Click Here
+
+Machine Learning Operations (MLOps): Getting Started
+
+4.5 Hours	
+Click Here
+
+Deploy Multi-Agent Systems with Gemini Enterprise Agent Platform
+
+6 Hours	
+Click Here
+
+Model Armor: Securing AI Deployments
+
+2.5 Hours	
+Click Here
+
+Extend Gemini Enterprise assistant capabilities: Challenge Lab
+
+2 Hours	
+Click Here
+
+Phase 3 - Google Cloud and Wipro Specialization Learning & Assessment	Mastering Claude Code & AI Agents	8 Hours	
+Click Here
+
+WINGS Deployment + Lab Hands-on	2 Hour	
+Click Here
+
+WEGA Deployment	2 Hour	
+Click Here
+
+FDE LLM Token Optimization & FinOps for GenAI	5 Hours	
+Click Here
+
+Capstone Project	
+ 
+
+Launching Soon..
+
